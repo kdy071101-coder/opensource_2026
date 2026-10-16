@@ -11,6 +11,8 @@ failed_logins = [
 ]
 
 threshold = 5
+print("SSH 로그인 실패 탐지 프로그램 시작")
+print(f"탐지 기준: {threshold}회 이상")
 
 for ip in set(failed_logins):
     count = failed_logins.count(ip)
