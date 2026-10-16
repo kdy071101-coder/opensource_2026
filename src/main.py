@@ -22,3 +22,5 @@ for ip in set(failed_logins):
     else:
         print(f"[정상] {ip}: 로그인 실패 {count}회")
 
+print("\n로그인 실패 탐지 완료")
+print(f"총 로그인 실패 횟수: {len(failed_logins)}회")
